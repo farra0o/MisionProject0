@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "146933733410",
+    "firebase_url": "https://taskappzero-default-rtdb.firebaseio.com",
+    "project_id": "taskappzero",
+    "storage_bucket": "taskappzero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146933733410:android:e9003d268c9ac4f18a527b",
+        "android_client_info": {
+          "package_name": "com.FarraStudios.FaraXD.TaskActionZero"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWqMKun4Dn9Q4Wympv-tCa3blEpgj_jw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
