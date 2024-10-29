@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/UIFiles/HomeUI.uss?fileID=7433441132597879392&amp;guid=322b9a5de32047049a2a2eae318aef51&amp;type=3#HomeUI" />
+    <ui:VisualElement name="LoginPanel" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgb(31, 28, 28); display: flex; visibility: visible;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: 100%; height: 10%; justify-content: center; align-self: auto;">
+            <ui:Label tabindex="-1" text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: auto; height: auto; font-size: 50px; color: rgb(238, 238, 238); align-self: auto; align-items: auto; -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="height: 90%; padding-top: 100px; padding-right: 50px; padding-bottom: 100px; padding-left: 50px; justify-content: flex-start; align-items: stretch;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:TextField picking-mode="Ignore" label="Name" value="Ingresar Correo" name="MailLogin" focusable="true" max-length="50" class="MyTextField" />
+                <ui:TextField label="Name" name="PasswordLogin" focusable="true" max-length="12" password="true" value="passwork" class="MyTextField" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:Button text="Iniciar Sessión " parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLogin" class="boton" />
+                <ui:Button text="Crear cuenta " parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnGoToRegistro" style="background-color: rgba(188, 188, 188, 0); font-size: 50px; color: rgb(213, 255, 66);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="RegistroPanel" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgb(31, 28, 28); position: absolute; display: none; visibility: visible;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: 100%; height: 10%; justify-content: center; align-self: auto;">
+            <ui:Label tabindex="-1" text="REGISTRARSE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: auto; height: auto; font-size: 50px; color: rgb(238, 238, 238); align-self: auto; align-items: auto; -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="height: 90%; padding-top: 100px; padding-right: 50px; padding-bottom: 100px; padding-left: 50px; justify-content: flex-start; align-items: stretch;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:TextField picking-mode="Ignore" label="Name" value="Ingresar Nombre... " name="UserName" focusable="true" max-length="50" tooltip="Nombre" class="MyTextField" />
+                <ui:TextField picking-mode="Ignore" label="Name" value="Ingresar Correo... " name="MailRegistro" focusable="true" max-length="50" class="MyTextField" />
+                <ui:TextField picking-mode="Ignore" label="Name" value="Ingresar Contraseña" name="passwordRegistro" focusable="true" password="true" max-length="12" tooltip="Contraseña" class="MyTextField" />
+                <ui:TextField picking-mode="Ignore" label="Name" value="Confirmar Contaseña" name="passwordConfirmationRegistro" focusable="true" password="true" max-length="12" tooltip="Confirmar Contraseña" class="MyTextField" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:Button text="Registrarse" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnRegister" class="boton" />
+                <ui:Button text="Ya tienes Usuario Inicia Sesión" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnGoToLogin" style="background-color: rgba(188, 188, 188, 0); font-size: 50px; color: rgb(213, 255, 66);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="MessagePannel" style="flex-grow: 1; display: none; min-width: 100%; position: absolute; min-height: 100%; align-items: center; justify-content: center; background-color: rgba(154, 153, 153, 0.47); visibility: visible; overflow: hidden;">
+        <ui:VisualElement name="VentanaEmergente" style="flex-grow: 1; min-width: 60%; min-height: 25%; max-width: 60%; max-height: 25%; background-color: rgb(34, 28, 32); align-items: center; justify-content: center;">
+            <ui:VisualElement style="flex-grow: 1; align-self: flex-end; justify-content: flex-start; align-items: auto;">
+                <ui:Button text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseWindow" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Mensaje" parse-escape-sequences="true" display-tooltip-when-elided="true" name="mensaje" style="font-size: 45px; color: rgb(255, 247, 247);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
